@@ -45,10 +45,14 @@ use{'vimwiki/vimwiki'}
 use{'goolord/alpha-nvim',
 use { "ellisonleao/gruvbox.nvim" }
 }
+use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install'}
 use{'itchyny/calendar.vim'}
 use{'lukas-reineke/indent-blankline.nvim'}
 use 'jbyuki/nabla.nvim'
   if packer_bootstrap then
+
+
+
     require('packer').sync()
   end
 end)
