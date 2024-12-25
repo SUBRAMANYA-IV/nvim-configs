@@ -18,7 +18,11 @@ vim.cmd('filetype plugin on')
 vim.cmd('syntax on')
 vim.cmd('set colorcolumn=80')
 
-
+-- Automatically save and restore folds
 
 -- user settings
 vim.opt.clipboard = "unnamedplus"
+
+-- folds save
+  
+

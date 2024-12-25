@@ -12,6 +12,10 @@ end
 local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
+  use {
+	"chrisgrieser/nvim-origami",
+	config = function() require("origami").setup({}) end, -- setup call needed
+  }
   use 'wbthomason/packer.nvim'
   use 'nvim-treesitter/nvim-treesitter'
   use 'nvim-orgmode/orgmode'
